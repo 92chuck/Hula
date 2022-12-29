@@ -22,14 +22,13 @@ const UserSchema = new Schema({
   },
   password: {
     type: String,
-    unique: true,
-    dropDups: true,
     required: "password is required",
     min: [4, "Must be at least 4, got {VALUE}"],
     max: [12, "Must be less than 10, got {VALUE}"],
   },
   isAdmin: { type: Boolean, default: false },
-  favorites: [{ type: refType, ref: "Product" }],
+  sfavorites: [{ type: refType, ref: "Series" }],
+  mfavorites: [{ type: refType, ref: "Movie" }],
 });
 
 const User = mongoose.model("User", UserSchema);
