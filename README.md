@@ -44,5 +44,5 @@ Admin ID : admin1 & PW : Admin1@
 Sign up or Sign in with ID : user1 & PW : User1@
 
 Runs the app in the development mode.
-Open [http://localhost:4200] to view it in your browser.
-Open [http://localhost:3000] to view json data.
+- Open [http://localhost:4200] to view it in your browser.
+- Open [http://localhost:3000] to view json data.
