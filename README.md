@@ -1,27 +1,47 @@
 # Hula
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+<em>Hulu website cloning project</em>
 
-## Development server
+## About Hula
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Provide movies and series streaming service you can watch anywhere! Add movies and series into your favorite and watch them later on your phone, table, or TV!
 
-## Code scaffolding
+## Video walkthrough :movie_camera:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Key Features :key:
 
-## Build
+- Create a user account
+- Broswe movies / series by genres
+- Add to favorites functionality to save contentes for later
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Tech Stack :books:
 
-## Running unit tests
+Below is a non-exhaustive list of technologies used throughout the project.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+| Front End | Back End | APIs | Libraries/Frameworks |
+| :-------: | :------: | :--: | :------------------: |
+|  Angular  | MongoDB  |      |      Bootstrap5      |
+|   HTML    | Node.js  |      |
+|   CSS     |          |      |
 
-## Running end-to-end tests
+## Setup :rocket:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+If you want to explore with Hula, feel free to clone this repo! After cloning, please enter the following commands:
 
-## Further help
+Create .env file with the followings (PORT, MONGO_URL, SALT, JWT_KEY)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Go into Server directory
+
+npm i
+npm run seed
+npm start
+
+At the same time in Root directory
+npm start
+
+Admin ID : admin1 & PW : Admin1@
+Sign up or Sign in with ID : user1 & PW : User1@
+
+Runs the app in the development mode.
+Open [http://localhost:4200] to view it in your browser.
+Open [http://localhost:3000] to view json data.
