@@ -1,0 +1,13 @@
+<div class="d-flex mt-4 align-items-center">
+  <h5>Genres</h5>
+  <a href="" class="ms-auto nav-link px-2 link-secondary">View All</a>>
+</div>
+<div
+  class="row row-cols-2 row-cols-lg-6 g-2 g-lg-5 mb-4 justify-content-center"
+>
+  <a *ngFor="let genre of genres" class="col text-center category__link">
+    <div class="category__img shadow bg-black">
+      <h4>{{ genre.name }}</h4>
+    </div>
+  </a>
+</div>

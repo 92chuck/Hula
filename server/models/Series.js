@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const refType = Schema.Types.ObjectId;
 
 const SeriesSchema = new Schema({
+  url: String,
   title: String,
   overview: String,
   firstAiredDate: Date,

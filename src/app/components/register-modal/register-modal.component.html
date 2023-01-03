@@ -1,0 +1,73 @@
+<div *ngIf="showRegister" class="loginModal">
+  <div class="loginModal-box">
+    <div class="loginModal-body">
+      <h3>Register</h3>
+      <form [formGroup]="registerForm">
+        <div class="modalForm-control">
+          <label for="email">Email</label>
+          <input type="email" formControlName="email" />
+          <span *ngIf="registerForm.get('email')?.errors?.['required']"
+            >email field cannot be empty</span
+          >
+          <span *ngIf="registerForm.get('email')?.errors?.['emailValidator']"
+            >email must be greater than 8 and less than 40 characters</span
+          >
+          <span *ngIf="registerForm.get('email')?.errors?.['pattern']"
+            >! input must be email type</span
+          >
+        </div>
+        <div class="modalForm-control">
+          <label for="text">Username</label>
+          <input type="text" formControlName="username" />
+          <span *ngIf="registerForm.get('username')?.errors?.['required']"
+            >username field cannot be empty</span
+          >
+          <span
+            *ngIf="registerForm.get('username')?.errors?.['usernameValidator']"
+          >
+            Username must be greater than 4 and less than 10 characters with no
+            special characters</span
+          >
+        </div>
+        <div class="modalForm-control">
+          <label for="password">Password</label>
+          <input type="password" formControlName="password" />
+          <span *ngIf="registerForm.get('password')?.errors?.['required']"
+            >password field cannot be empty!</span
+          >
+          <span
+            *ngIf="registerForm.get('password')?.errors?.['passwordValidator']"
+          >
+            Password must contain upper and lowercase, number, and special
+            characters: length should be between 4 and 12</span
+          >
+        </div>
+        <div class="modalForm-control">
+          <label for="password">Confirm password</label>
+          <input type="password" formControlName="confirmPassword" />
+          <span *ngIf="registerForm.get('confirmPassword')?.errors?.['required']"
+            >password field cannot be empty!</span
+          >
+          <span
+            *ngIf="registerForm.get('confirmPassword')?.errors?.['confirmPasswordValidator']"
+          >
+            password doesn't match</span
+          >
+        </div>
+        <p><a href="#">Forgot your email or password?</a></p>
+        <button (click)="register()" class="btn btn-dark">
+          Create an account
+        </button>
+      </form>
+    </div>
+    <div class="loginModal-footer">
+      <p>Don't have an account? <a href="#">Start your free trial</a></p>
+    </div>
+    <img
+      (click)="toggleCloseRegiester()"
+      class="close"
+      src="../../../assets/close.svg"
+      alt="close"
+    />
+  </div>
+</div>

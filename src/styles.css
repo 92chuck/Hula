@@ -1,1 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
+
+.hula {
+  color: #00ed82;
+}
+
+html {
+  height: 100vh;
+  background-color: #181818;
+}
+
+a {
+  color: var(--bs-white);
+  cursor: pointer;
+}
+
+/* category card */
+.category__link {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: 250ms all;
+}
+
+.category__link:hover {
+  transform: scale(1.1);
+}
+
+.category__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.category__img--large {
+  height: 330px;
+}
+
+.category__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.loginModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.loginModal-box {
+  margin: 3% auto;
+  width: 430px;
+  background: white;
+  color: black;
+  position: relative;
+}
+
+.loginModal-body {
+  padding: 50px;
+}
+
+.loginModal-body h3 {
+  font-weight: bold;
+}
+
+.loginModal-body .btn {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.loginModal .close {
+  cursor: pointer;
+  height: 23px;
+  width: 23px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.loginModal-footer {
+  background: #f7f7f9;
+  color: black;
+  padding: 20px 0;
+  border-top: #eee 1px solid;
+  text-align: center;
+}
+
+.loginModal a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+.modalForm-control {
+  margin: 20px 0;
+}
+
+.modalForm-control label {
+  display: block;
+  text-transform: uppercase;
+}
+
+.modalForm-control input {
+  width: 100%;
+  border: 2px #ccc solid;
+  border-radius: 5px;
+  height: 50px;
+  padding: 5px;
+}

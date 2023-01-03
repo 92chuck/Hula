@@ -1,0 +1,36 @@
+<app-content-show-genres
+  [genres]="(movies$ | async)?.[0]?.genres"
+></app-content-show-genres>
+
+<app-content-show
+  *ngIf="(user$ | async).isLoggedIn"
+  [title]="'Favorite Movies'"
+  [contents]="(user$ | async).mfavorites"
+></app-content-show>
+
+<app-content-show
+  [title]="'News'"
+  [contents]="(contents$ | async).news"
+></app-content-show>
+<app-content-show
+  [title]="'Reality-TV'"
+  [contents]="(contents$ | async).realityTV"
+></app-content-show>
+<app-content-show
+  [title]="'Romance'"
+  [contents]="(contents$ | async).romance"
+></app-content-show>
+<app-content-show
+  [title]="'Sicence'"
+  [contents]="(contents$ | async).sicence"
+></app-content-show>
+<app-content-show
+  [title]="'Education'"
+  [contents]="(contents$ | async).education"
+></app-content-show>
+<app-content-show
+  [title]="'Nature'"
+  [contents]="(contents$ | async).nature"
+></app-content-show>
+<br />
+<br />

@@ -4,9 +4,10 @@ const Schema = mongoose.Schema;
 const refType = Schema.Types.ObjectId;
 
 const MovieSchema = new Schema({
+  url: String,
   title: String,
   overview: String,
-  releaseDate: Date,
+  firstAiredDate: Date,
   genres: [{ type: refType, ref: "Genre" }],
   region: { type: refType, ref: "Region" },
 });

@@ -1,0 +1,96 @@
+<!-- main heading part -->
+
+<div class="px-4 py-5 text-center heading">
+  <h6 class="hula pt-5 mt-5">Try up to one month free</h6>
+  <h1 class="hula fw-bold display-1">hula</h1>
+  <h3 class="fw-bold">Watch thousand of TV shows and movies.</h3>
+  <div class="col-lg-12 mx-auto">
+    <p class="lead mb-4">
+      HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.
+    </p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
+      <a
+        (click)="toggleShowRegiester()"
+        class="btn btn-primary btn-light btn-lg px-5 py-3"
+        >Start your free trial</a
+      >
+    </div>
+    <span class="small"
+      >Free trial for new & eligible returning subscribers only.</span
+    >
+  </div>
+</div>
+
+<!-- trending  start -->
+
+<app-content-show
+  [title]="'Trending'"
+  [contents]="(contents$ | async).trending"
+></app-content-show>
+
+<!-- user's favorite -->
+<app-content-show
+  *ngIf="(user$ | async).isLoggedIn"
+  [title]="'Favorite Series'"
+  [contents]="(user$ | async).sfavorites"
+></app-content-show>
+<app-content-show
+  *ngIf="(user$ | async).isLoggedIn"
+  [title]="'Favorite Movies'"
+  [contents]="(user$ | async).mfavorites"
+></app-content-show>
+
+<!-- ad -->
+
+<div class="py-5 my-5 text-center ad">
+  <h6 class="hula">series + movies = hula</h6>
+  <h1 class="display-5 fw-bold mb-5">Watching Make You Better</h1>
+  <div class="col-lg-10 mx-auto mb-2">
+    <h3 class="fw-bold mb-5">
+      Make the switch from cable. Get thousand of things to see with your
+      favorite documentary, drama, and movies - plus the entire Hulu streaming
+      library.
+    </h3>
+    <p class="lead mb-4">
+      HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.
+    </p>
+    <span class="small text-muted"
+      >Live TV plan required. Regional restrictions, blackouts and additional
+      terms apply. See details</span
+    >
+    <div class="d-grid gap-2 d-sm-flex mt-4 justify-content-sm-center">
+      <a href="/register" class="nav px-2 link-light">All Movies</a>
+      <a href="/register" class="nav px-2 link-light">All Series</a>
+    </div>
+  </div>
+</div>
+
+<!-- contents -->
+
+<app-content-show
+  [title]="'Documentary'"
+  [contents]="(contents$ | async).documentary"
+></app-content-show>
+<app-content-show
+  [title]="'News'"
+  [contents]="(contents$ | async).news"
+></app-content-show>
+<app-content-show
+  [title]="'Drama'"
+  [contents]="(contents$ | async).drama"
+></app-content-show>
+<app-content-show
+  [title]="'Reality-TV'"
+  [contents]="(contents$ | async).realityTV"
+></app-content-show>
+<app-content-show
+  [title]="'Family'"
+  [contents]="(contents$ | async).family"
+></app-content-show>
+<app-content-show
+  [title]="'Romance'"
+  [contents]="(contents$ | async).romance"
+></app-content-show>
+<app-content-show-genres [genres]="genres$ | async"></app-content-show-genres>
+<br />
+<br />

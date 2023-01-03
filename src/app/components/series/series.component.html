@@ -1,0 +1,37 @@
+<app-content-show-genres
+  [genres]="(series$ | async)?.[0]?.genres"
+></app-content-show-genres>
+
+<app-content-show
+  *ngIf="(user$ | async).isLoggedIn"
+  [title]="'Favorite Series'"
+  [contents]="(user$ | async).sfavorites"
+></app-content-show>
+
+<app-content-show
+  [title]="'Documentary'"
+  [contents]="(contents$ | async).documentary"
+></app-content-show>
+<app-content-show
+  [title]="'Drama'"
+  [contents]="(contents$ | async).drama"
+></app-content-show>
+<app-content-show
+  [title]="'Family'"
+  [contents]="(contents$ | async).family"
+></app-content-show>
+<app-content-show
+  [title]="'History'"
+  [contents]="(contents$ | async).history"
+></app-content-show>
+<app-content-show
+  [title]="'Music'"
+  [contents]="(contents$ | async).music"
+></app-content-show>
+<app-content-show
+  [title]="'Mystery'"
+  [contents]="(contents$ | async).mystery"
+></app-content-show>
+
+<br />
+<br />
