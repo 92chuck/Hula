@@ -48,6 +48,7 @@ export class LoginModalComponent implements OnInit {
     this.toggleCloseLogin();
     this.router.navigate(['/']);
     this.loginForm.reset({ email: '', password: '' });
+    alert('You are successfully logged In!');
   }
 
   emailValidator(control: FormControl) {

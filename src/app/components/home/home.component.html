@@ -10,6 +10,7 @@
     </p>
     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
       <a
+        *ngIf="!(user$ | async).isLoggedIn"
         (click)="toggleShowRegiester()"
         class="btn btn-primary btn-light btn-lg px-5 py-3"
         >Start your free trial</a
@@ -59,8 +60,8 @@
       terms apply. See details</span
     >
     <div class="d-grid gap-2 d-sm-flex mt-4 justify-content-sm-center">
-      <a href="/register" class="nav px-2 link-light">All Movies</a>
-      <a href="/register" class="nav px-2 link-light">All Series</a>
+      <a routerLink="/movies" class="nav px-2 link-light">All Movies</a>
+      <a routerLink="/series" class="nav px-2 link-light">All Series</a>
     </div>
   </div>
 </div>

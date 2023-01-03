@@ -61,6 +61,7 @@ export class RegisterModalComponent implements OnInit {
       password: '',
       confirmPassword: '',
     });
+    alert('Your Account is successfully registered!');
   }
 
   /**
