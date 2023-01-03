@@ -33,10 +33,13 @@ Create .env file with the followings (PORT, MONGO_URL, SALT, JWT_KEY)
 Go into Server directory
 
 npm i
+
 npm run seed
+
 npm start
 
 At the same time in Root directory
+
 npm start
 
 Admin ID : admin1 & PW : Admin1@
