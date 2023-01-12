@@ -30,7 +30,7 @@ Below is a non-exhaustive list of technologies used throughout the project.
 
 If you want to explore with Hula, feel free to clone this repo! After cloning, please enter the following commands:
 
-Create .env file with the followings (PORT, MONGO_URL, SALT, JWT_KEY)
+Create .env file with the followings (PORT, MONGO_URL, SALT, ACCESS_TOKEN_SECRET)
 
 Go into Server directory
 
