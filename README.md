@@ -8,6 +8,8 @@ Provide movies and series streaming service you can watch anywhere! Add movies a
 
 ## Video walkthrough :movie_camera:
 
+https://youtu.be/dXFDQKiP8zk
+
 ## Key Features :key:
 
 - Create a user account
