@@ -6,10 +6,6 @@
 
 Provide movies and series streaming service you can watch anywhere! Add movies and series into your favorite and watch them later on your phone, table, or TV!
 
-## Video walkthrough :movie_camera:
-
-https://youtu.be/dXFDQKiP8zk
-
 ## Key Features :key:
 
 - Create a user account
